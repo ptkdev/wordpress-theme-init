@@ -1,0 +1,516 @@
+/*
+ * Title Wordpress Theme
+ *  Copyright (C) 2012  user
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *  
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *  
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+
+article, aside, figure, figcaption, footer, header, hgroup, nav, section,summary {
+	display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+html,body {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+	width: 100%;
+	min-width: 980px;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+embed {
+	width: 600px;
+	height: 450px;
+}
+
+object {
+	width: 600px;
+	height: 450px;
+}
+
+ul{
+	list-style-type: none;
+	list-style-image: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+iframe {
+	width: 600px;
+	height: 350px;
+	border: 0px;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em; 
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+button,
+input {
+    line-height: normal;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0px;
+}
+
+.font-arial{
+	font-family: Arial,"Verdana"; 
+}
+
+.font-dejavu{
+	font-family: "DejaVu Sans", "Sans Serif",Verdana;  
+}
+
+.font-georgia{
+	font-family: "Georgia", "Verdana","Sans Serif","OpenSymbol"; 
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.size10px{
+	font-size: 10px;
+}
+
+.size11px{
+	font-size: 11px;
+}
+
+.size12px{
+	font-size: 12px;
+}
+
+.size13px{
+	font-size: 13px;
+}
+
+.size14px{
+	font-size: 14px;
+}
+
+.size18px{
+	font-size: 18px;
+}
+
+.size24px{
+	font-size: 24px;
+}
+
+.bgcolor-black{
+	background-color: #000000;
+}
+
+.bgcolor-white{
+	background-color: #FFFFFF;
+}
+
+.bgcolor-red{
+	background-color: #CC0000;
+}
+
+.bgcolor-blue{
+	background-color: #1C83CE;
+}
+
+.bgcolor-violet{
+	background-color: #330066;
+}
+
+.bgcolor-green{
+	background-color: #009900;
+}
+
+.color-black{
+	color: #000000;
+}
+
+.color-white{
+	color: #FFFFFF;
+}
+
+.color-red{
+	color: #CC0000;
+}
+
+.color-blue{
+	color: #1C83CE;
+}
+
+.color-violet{
+	color: #330066;
+}
+
+.color-green{
+	color: #009900;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right, #sidebar{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.align-center, #footer{
+	text-align: center;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.align-just{
+	text-align: justify;
+}
+
+.width-100{
+	width: 100%;
+}
+
+.width-max{
+	width: 980px;
+	margin: 0 auto;
+}
+
+.width-content{
+	width: 600px;
+}
+
+.height-100{
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto; 
+}
+
+.height4{
+	height: 4px;
+}
+
+.z-index0{
+	position: relative;
+	z-index: 0;
+}
+
+.z-index1{
+	position: relative;
+	z-index: 1;
+}
+
+.z-index2{
+	position: relative;
+	z-index: 2;
+}
+
+.z-index3, #sidebar{
+	position: relative;
+	z-index: 3;
+}
+
+.z-index9999{
+	position: relative;
+	z-index: 9999;
+}
+
+a:link, a:visited, a:hover, a:active, a:focus{
+  color: #000000;
+}
+
+a:link:hover, a:visited:hover{ 
+  text-decoration:underline;
+}
+a:active{ 
+  text-decoration:none;
+}
+a:focus{ 
+  text-decoration:underline;
+}
+a:visited{ 
+  text-decoration:none;
+}
+a:link{ 
+  text-decoration:none;
+}
+
+a.title-post:link, a.title-post:visited, a.title-post:hover, a.title-post:active, a.title-post:focus{
+	font-family: "DejaVu Sans", "Sans Serif",Verdana; 
+	font-size: 20px;
+	color: #000000;
+}
+
+a.title-post:link:hover, a.title-post:visited:hover{ 
+  text-decoration:underline;
+}
+a.title-post:active{ 
+  text-decoration:none;
+}
+a.title-post:focus{ 
+  text-decoration:underline;
+}
+a.title-post:visited{ 
+  text-decoration:none;
+}
+a.title-post:link{ 
+  text-decoration:none;
+}
+
+a.author:link, a.author:visited, a.author:hover, a.author:active, a.author:focus{
+	font-family: "DejaVu Sans", "Sans Serif",Verdana; 
+	font-weight: bold;
+	color: #000000;
+}
+
+a.author:link:hover, a.author:visited:hover{ 
+  text-decoration:underline;
+}
+a.author:active{ 
+  text-decoration:none;
+}
+a.author:focus{ 
+  text-decoration:underline;
+}
+a.author:visited{ 
+  text-decoration:none;
+}
+a.author:link{ 
+  text-decoration:none;
+}
+
+#logo{
+}
+
+#container{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -80px; 
+}
+
+#container-width{
+	width: 980px;
+	margin: 0 auto; 
+}
+
+#content{
+	width: 600px;
+	margin-right: 375px;
+}
+
+#sidebar{
+	width: 370px;
+	padding-left: 5px;
+}
+
+.cat-item{
+	margin-left: 5px;
+}
+
+.twitter{
+	padding-left: 5px;
+}
+
+.comments{
+	width: 600px;
+}
+
+#disqus_thread{
+	width: 600px;
+}
+
+#footer-push {
+	height: 80px; 
+	clear: both;
+	
+}
+
+#footer{
+
+}
