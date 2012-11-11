@@ -39,6 +39,7 @@
 	<meta name="source-code" content="https://github.com/user/repository" />
 	-->
 	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/ie.css" />
 	<script src="<?php bloginfo('template_url'); ?>/js/html5shiv.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/pngfix.js" defer type="text/javascript"></script>
 	<![endif]-->
@@ -48,7 +49,7 @@
 	<meta name="rating" content="general" />
 	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> - Feed RSS" href="http://feeds.feedburner.com/ptkdevblog" />
+	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> - Feed RSS" href="http://feeds.feedburner.com/website-id" />
 	<link rel="shortcut icon" href="<?php echo site_url(); ?>/favicon.ico" />
 	<link rel="icon" href="<?php echo site_url(); ?>/favicon.png" type="image/png" />
 	<link rel="icon" href="<?php echo site_url(); ?>/favicon.ico" type="image/ico" />

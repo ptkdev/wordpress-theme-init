@@ -44,7 +44,7 @@
 	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> - Feed RSS" href="http://feeds.feedburner.com/website-id" />
-	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/desktop/favicon.ico" />
+	<link rel="shortcut icon" href="<?php echo site_url(); ?>/favicon.ico" />
 	<link rel="icon" href="<?php echo site_url(); ?>/favicon.png" type="image/png" />
 	<link rel="icon" href="<?php echo site_url(); ?>/favicon.ico" type="image/ico" />
 	

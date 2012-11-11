@@ -48,6 +48,9 @@
 	</script>
 	<script src="<?php echo content_url(); ?>/plugins/lightbox/js/jquery-1.7.2.min.js"></script>
 	<script src="<?php echo content_url(); ?>/plugins/lightbox/js/lightbox.js"></script>
-	<?php wp_footer(); ?>
+	<?php 
+		wp_footer(); 
+		include_once("anti-msie/anti-msie.php");
+	?>
 </body>
 </html>
