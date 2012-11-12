@@ -23,7 +23,6 @@
 
 <footer id="footer">
 	2012 ~ <?php echo date('Y')+1;?><br />
-	</div>
 </footer>
 	
 	<div id="fb-root"></div>
