@@ -50,7 +50,8 @@
 	<script src="<?php echo content_url(); ?>/plugins/lightbox/js/lightbox.js"></script>
 	<?php 
 		wp_footer(); 
-		include_once("anti-msie/anti-msie.php");
+		$antimsie_path = get_bloginfo('template_url')."/";
+		include_once("anti-msie/anti-msie.php"); 
 	?>
 </body>
 </html>
