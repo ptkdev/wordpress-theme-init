@@ -17,9 +17,9 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 $msie_lang = "This website is not 100% compatible with Internet Explorer because this browser:<br /><br />
-			  - is not very secure (vulnerable to virus)<br />
-			  - doesn't use the latest<br />
-			  - is very slow when loading pages.<br /><br />
+			  - Is not very secure (vulnerable to virus)<br />
+			  - Doesn't use the latest web technologies<br />
+			  - Is very slow when loading pages.<br /><br />
 			  Please download one of the following browser to securely surf the internet. 
 			  In case you don't use Internet explorer or you don't care about the consequences 
                           click anywhere on this page and read the website (but remember: we warned you!)";
